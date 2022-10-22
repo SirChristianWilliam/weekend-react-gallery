@@ -13,3 +13,14 @@
   font-size: 1.5em;
 }
 
+img {
+  width:100px;
+  height:100px;
+  display:inline;
+}
+.imageContainer {
+  display:flex;
+  flex-wrap: wrap;
+
+ }
+
