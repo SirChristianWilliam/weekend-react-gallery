@@ -5,11 +5,10 @@ function GalleryItem({galleryItem, currentLikes, idClicked, handleClick}) {
         console.log('in handle submit');
          currentLikes(galleryItem)
     }
-//pass in ID not likes
     return ( 
         <>
         <div className="imageContainer">
-            <p>
+            
                 <img src={galleryItem.path}
                 onClick={() => {
                     handleClick(galleryItem.id);
@@ -22,9 +21,6 @@ function GalleryItem({galleryItem, currentLikes, idClicked, handleClick}) {
                 ) : (<div></div>
                 )}
 
-                {/* <img src={galleryItem.description} /> */}
-
-            </p>
             <p> 
                 {galleryItem.likes} people love this!
             </p>

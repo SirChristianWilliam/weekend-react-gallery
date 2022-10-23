@@ -28,7 +28,6 @@ function App() {
   }
   
 const addLikes = (gItem) => { 
-  console.log("YAAAARRRRR")
   axios({
     method:'PUT',
     url: `/gallery/like/${gItem.id}`
