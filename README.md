@@ -11,7 +11,7 @@ the image to the description on click. I opted to change it from an onClick
 event to a onMouseOver and onMouseOut. Otherwise the use would be confused and wouldn't realize they'd need to click on the description text in order to see the image again. 
 
 ## Screen Shot
-![Screenshot](/Users/mymac/PrimeFolder/AllTier1Projects/TIER2/week10/group-fs-react-shopping-list/weekend-react-gallery/public/images/reactGallerySC.png)
+![Screenshot](public/images/reactGallerySC.png)
 
 ### Prerequisites
 
