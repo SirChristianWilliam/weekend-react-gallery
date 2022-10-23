@@ -16,11 +16,13 @@
 img {
   width:100px;
   height:100px;
-  display:inline;
 }
 .imageContainer {
   display:flex;
   flex-wrap: wrap;
-
- }
+}
+main {
+  display:flex;
+  width:100%;
+}
 

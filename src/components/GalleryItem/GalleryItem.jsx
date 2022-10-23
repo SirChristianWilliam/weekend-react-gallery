@@ -1,3 +1,5 @@
+// import React, {Component} from 'react'; // YO
+// import './GalleryItem.css'; // YO
 function GalleryItem({galleryItem, currentLikes}) {
 
     const handleSubmit = (evt) =>{
@@ -5,12 +7,13 @@ function GalleryItem({galleryItem, currentLikes}) {
         console.log('in handle submit');
          currentLikes(galleryItem)
     }
-//pass in ID not likes
     return ( 
         <>
         <div className="imageContainer">
             <p>
                 <img src={galleryItem.path} />
+                <p>{galleryItem.description} </p>
+
             </p>
             <p> 
                 {galleryItem.likes} people love this!
