@@ -8,24 +8,25 @@ function GalleryItem({galleryItem, currentLikes, idClicked, handleClick}) {
     return ( 
         <>
         <div className="imageContainer">
-            
-                <img src={galleryItem.path}
-                onClick={() => {
-                    handleClick(galleryItem.id);
-                }} />
                 {galleryItem.id == idClicked ? (
                     <div>
-                        <h3> {galleryItem.path}</h3>
-                        <div>{galleryItem.description}</div>
+                        <div onMouseOut={() => {
+                            handleClick(galleryItem.id)
+                        }}>{galleryItem.description}</div>
                     </div>
-                ) : (<div></div>
+                ) : (<div>
+                <img src={galleryItem.path}
+                onMouseOver={() => {
+                    handleClick(galleryItem.id);
+                }} />
+                </div>
                 )}
 
-            <p> 
+            <p className="loves"> 
                 {galleryItem.likes} people love this!
             </p>
-            <p>
-                <button onClick={handleSubmit}>Like</button>
+            <p className="likes">
+                <button onClick={handleSubmit}>👍</button>
             </p>
         </div>
         </>

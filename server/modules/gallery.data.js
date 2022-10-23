@@ -1,9 +1,9 @@
 const galleryItems = [
-    { id: 1, path: 'images/goat_small.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 },
-    { id: 2, path: 'images/doug.webp', description: `It's called fashion. Look it up.`, likes: 0 },
-    { id: 3, path: 'images/krib.jpeg', description: `New smash bros is looking 🔥`, likes: 0 },
-    { id: 4, path: 'images/simpsons.jpeg', description: 'How wholesome!', likes: 3 },
-    { id: 5, path: 'images/turtle.jpeg', description: 'Kowabunga dude', likes: 0 }
+    { id: 1, path: 'images/Phrog.jpg', description: `Phrog`, likes: 0 },
+    { id: 2, path: 'images/Scrambles.jpg', description: `Her name is Scrambles the Death Dealer`, likes: 0 },
+    { id: 3, path: 'images/Smiles.jpg', description: `:)`, likes: 0 },
+    { id: 4, path: 'images/Rocky.jpg', description: 'This is Rocky', likes: 3 },
+    { id: 5, path: 'images/Floral.jpg', description: 'I once saw an old lady wearing this exact same shirt.', likes: 0 }
 ];
 
 module.exports = galleryItems;
