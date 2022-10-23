@@ -5,9 +5,8 @@ import './App.css';
 import GalleryList from '../GalleryList/GalleryList';
  
 function App() {
-  let peopleLove = `people love this`;
   const [galleryList, setGalleryList] = useState([]);
-
+  const [idClicked, setIDClicked] = useState(-1);
 
   useEffect( () => {
     getGalleryList();
@@ -42,6 +41,9 @@ const addLikes = (gItem) => {
     console.log('Error in adding likes');
   });
 }
+function handleClick(gItem) {
+  setIDClicked(gItem === idClicked ? -1 : gItem);
+}
 
     return (
       <main>
@@ -53,6 +55,8 @@ const addLikes = (gItem) => {
         <GalleryList 
         galleryList={galleryList}
         likes={addLikes}
+        idClicked={idClicked}
+        handleClick={handleClick}
         />
         
       </div>

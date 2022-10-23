@@ -1,6 +1,6 @@
 import React from 'react';
 import GalleryItem from "../GalleryItem/GalleryItem";
-function GalleryList({galleryList, likes}) {
+function GalleryList({galleryList, likes,handleClick,idClicked}) {
     
     return (
         <>
@@ -9,6 +9,8 @@ function GalleryList({galleryList, likes}) {
         key={galleryitem.id}
         galleryItem={galleryitem}
         currentLikes={likes} 
+        handleClick={handleClick}
+        idClicked={idClicked}
         />
         ))}
         </> 
