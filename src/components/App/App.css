@@ -2,59 +2,69 @@
   text-align: center;
 }
 body {
-  background-image:linear-gradient(to right, grey,white);
+  background-image: url('/Users/mymac/PrimeFolder/AllTier1Projects/TIER2/week10/group-fs-react-shopping-list/weekend-react-gallery/public/images/treesBG.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .App-header {
   background-color: #222;
   padding: 1em;
   color: white;
   margin-bottom: 1em;
-  position: absolute;
+  position: fixed;
   top:0;
+  left:0;
   width:100%;
-
+  z-index:1;
 }
 .App-title {
   font-size: 1.5em;
-  text-shadow: 0px 0px 2px yellow;
-    color: #c4eddb;
+  text-shadow: 0px 0px 2px #a1931e;
+  color: #c4eddb;
     font-size: 28px;
 }
 img {
-  width:100px;
-  height:100px;
-  position: absolute;
+  width:150px;
+  height:150px;
+  /* position: absolute; */
     left: 25%;
     bottom: 41%;
     outline:1px solid black;
-    outline-offset: 2px;
+    outline-offset: 20px;
     cursor:pointer;
+
+    border: 1px solid black;
+    border-radius: 25%;
+
+
 }
 .imageContainer {
   display:flex;
-  width: 200px;
+  width: 300px;
   justify-content: space-around;
   flex-direction: column;
   position:relative;
   border:1px solid black;
-  height: 250px;
-  margin-left:20px;
+  border-radius: 25%;
+
+  height: 350px;
+  margin-left: 140px;
   margin-bottom:20px;
   float:left;
-  background-color: #c4eddb;
+  background-color: rgb(255 227 162 / 70%);
 }
 main {
-  margin-top:100px;
+  margin-top: 130px;
 }
 .likes {
   position: absolute;
     bottom: 0;
-    left: 41%;
+    left: 46%;
 }
 .loves {
 position: absolute;
 bottom: 31px;
-left: 33px;
+left: 85px;
 }
 button {
   cursor:pointer;

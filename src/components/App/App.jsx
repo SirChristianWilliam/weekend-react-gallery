@@ -47,7 +47,7 @@ function handleClick(gItem) {
       <main>
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <h1 className="App-title">🍂 Gallery of My Life 🍁</h1>
         </header>
         {/* <p>Gallery goes here</p> */}
         <GalleryList // GalleryList is taking the data from its component, made available from line 5
